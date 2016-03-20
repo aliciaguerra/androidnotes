@@ -1,0 +1,22 @@
+Describe activites.
+Activities are what you refer to as the window to the user interface. Just as you create windows in order to
+display output or to ask for an input in the form of dialog boxes, activites play the same role, though it 
+may not always be in the form of a user interface.
+
+What are intents?
+Intents display notification messages to the user from within the Android enabled device. It can be used to
+alert the user of a particular state that has occured. Users can be made to respond to the intents.
+
+Differentiate activities from services.
+Activities can be closed, or terminated anytime the user wishes. On the other hand, services are designed to
+run behind the scenes, and can run independently. Most services run continuously, regardless of whether there 
+are certain or no activities being executed.
+
+What are contianers?
+Containers, as the name itself implies, hold objects and widgets together, depending on which specific items
+are needed and in what particular arrangement that is wanted. Containers may hold labels, fields, buttons, or even
+child containers as examples.
+
+What is orientation?
+Orientation, which can be used as setOrientation(), dictates if the LinearLayout is represented as a row or column.
+Values are set as either horizontal or vertical.
