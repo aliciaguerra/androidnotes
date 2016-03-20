@@ -71,3 +71,20 @@ When dealing with multiple resources, which one takes precendence?
 Assuming that all of these multiple resources are able to match the configuration of a device, the 'locale' qualifier
 almost always takes higher precendence over all the others.
 
+When does ANR occur?
+The ANR dialog is displayed to the user based on two possible conditions. One is that there is no response to an
+inoput event within 5 seconds, and the other is when a broadcast reciever is not done executing within 10 seconds.
+
+What is AIDL?
+AIDL, or Android Interface Definition Language, handles the interface requirements between a client and a service
+so both can communicate at the same level through interprocess communication or IPC.  This process involves breaking
+down objects into primitives that Android can understand. This part is simply because a process cannot access the
+memory of another process.
+
+Whata data types are supported by AIDL?
+AIDL has support for the following data types:
+-string
+-charSequence
+-List
+-Map
+-all native Java data types like int, long, char, and boolean
