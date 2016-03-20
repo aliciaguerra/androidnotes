@@ -20,3 +20,54 @@ child containers as examples.
 What is orientation?
 Orientation, which can be used as setOrientation(), dictates if the LinearLayout is represented as a row or column.
 Values are set as either horizontal or vertical.
+
+What is adb?
+Adb is short for Android debug bridge. It allows developers the power to execute remote shell commands. Its basic 
+function is to allow and control communication towards and from the emulator port.
+
+What are the four essential states of an activity?
+-active-activity is at the foreground
+-paused-if the activity is at the background and still visible
+-stopped-if the activity is not visible and therefore is hidden or observed by another activity
+-destroyed-when the activity process is killed or completely terminated
+
+What is ANR?
+ANR is short for application not responding. This is ctually a dialog that appears to the user whenever an application
+has been unresponsive for a long period of time.
+
+What is the importance of settings permissions in app development?
+Permissions allow certain restrictions to be imposed primarily to protect data and code. Without these, 
+codes could be compromised, resulting to defects in functionality.
+
+What is the function of an intent filter?
+Because every component needs to indicate which intents they can respond to, intent filters are used to filter
+out intents that these components are willing to recieve. One or more intent filters are possible, depending on
+the services and activities that are going to make use of it.
+
+Enumerate the three key loops when monitoring an activity.
+-entire lifetime-activity happens between onCreate and onDestroy
+-visible lifetime-activity happens between onStart and onStop
+-foreground lifetime-activity happens between onResume and onPause
+
+When is the onStop() method revoked?
+A call to onStop method happens when an acitivty is no longer visible to the user,
+either because another activity has taken over or if in front of that activity.
+
+How can ANR be prevented?
+One technique that prevents the Android system from concluding a code that has been unresponsive for a long
+period of time is to create a child thread. Within the child thread, most of the actual workings of code
+can be placed, so that the main thread runs with minimal periods of unresponsive times.
+
+Enumerate the steps in creating a bounded service through AIDL.
+1.create a .aidl, which defines the programming interface
+2.implement the interface, which involves extending the inner abstract Stub class as well as implanting its methods
+3.expose the interface, which involves interfacing the service to the clients
+
+What is the importance of default resources?
+When default resources, which contain default strings and files, are not present, an error will occur
+and the app will not run. Resources are placed in specially named subdirectories under the project/res directories.
+
+When dealing with multiple resources, which one takes precendence?
+Assuming that all of these multiple resources are able to match the configuration of a device, the 'locale' qualifier
+almost always takes higher precendence over all the others.
+
