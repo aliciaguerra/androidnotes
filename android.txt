@@ -88,3 +88,10 @@ AIDL has support for the following data types:
 -List
 -Map
 -all native Java data types like int, long, char, and boolean
+
+What is a fragment?
+A fragment is a part of portion of an activity. It is modular in a sense that you can move around or combine 
+with other fragments in a single activity. Fragments are also reusable.
+
+What is a visible activity?
+A visible activity is one that sits behind a foreground dialog. It is actually visible to the user, but not necessarily in the foreground itself.
